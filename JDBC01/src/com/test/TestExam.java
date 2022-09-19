@@ -7,5 +7,5 @@ public class TestExam
 		System.out.println("test");
 		System.out.println("test");
 	}
-	
+
 }

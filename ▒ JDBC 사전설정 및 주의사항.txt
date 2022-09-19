@@ -6,7 +6,7 @@
   (ex1. 11g Enterprise Edition 설치 경로가 『C:\oraclexe』인 경우)
   .;C:\oraclexe/app/oracle/product/11.2.0/server/jdbc\lib\ojdbc6.jar;추가.....;추가... 하면된다.
 
- ;는 종결자말고 구분자 역할을한다.
+ -- ;는 종결자말고 구분자 역할을한다.
 
   (ex2. 10g Enterprise Edition 설치 경로가 『C:\oracle』인 경우)
   ,;C:\oracle\product\10.x.x\db_1\jdbc\lib\ojdbc6.jar	
