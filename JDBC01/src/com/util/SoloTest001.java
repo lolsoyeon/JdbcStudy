@@ -42,7 +42,7 @@ public class SoloTest001
 				String pwd = "tiger";		// 오라클 사용자 계정 암호
 				
 				Class.forName("oracle.jdbc.driver.OracleDriver");
-				//-- OracleDriver 클래스에 대한 객테 생성
+				//-- OracleDriver 클래스에 대한 객체 생성
 				//	 드라이버 로딩 → JVM에 전달
 				
 				dbConn = DriverManager.getConnection(url, user, pwd);
