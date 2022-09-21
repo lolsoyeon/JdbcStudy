@@ -1,6 +1,7 @@
 SELECT USER 
 FROM DUAL;
 --==>> SCOTT
+
 --○ 기존 테이블 제거
 DROP TABLE TBL_SCORE;
 --==>> Table TBL_SCORE이(가) 삭제되었습니다.
@@ -79,7 +80,7 @@ COMMIT;
 --==>> 커밋 완료.
 
 
--- 2. 리스트 출력 쿼리문 구성(총점, 평균, 석차)
+-- 2. 리스트 출력 쿼리문 구성(총점, 평균, 석차 포함)
 SELECT SID, NAME, KOR, ENG, MAT
         , (KOR + ENG + MAT) AS TOT
         , (KOR + ENG + MAT) / 3 AS AVG
@@ -103,7 +104,8 @@ FROM TBL_SCORE;
 SELECT COUNT(*) AS COUNT FROM TBL_SCORE;
 
 --==>> 1
--- 4. 이름 검색 쿼리문 구성(총점, 평균, 석차포함)
+
+-- 4. 이름 검색 쿼리문 구성(총점, 평균, 석차 포함)
 
 SELECT SID, NAME, KOR, ENG, MAT, TOT, AVG, RANK
 FROM 

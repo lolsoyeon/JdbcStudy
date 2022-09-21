@@ -43,8 +43,8 @@ public class ScoreDAO
 		return result;
 		
 	}
-	//  - 전체 리스트 출력 담당 메소드
 	// ScoreDTO 를 담아둘수있는 자료구조
+	//  - 전체 리스트 출력 담당 메소드
 	public ArrayList<ScoreDTO> list() throws SQLException
 	{
 		ArrayList<ScoreDTO> result = new ArrayList<ScoreDTO>();
@@ -158,7 +158,8 @@ public class ScoreDAO
 				+ ", (KOR + ENG + MAT) AS TOT"
 				+ ", (KOR + ENG + MAT) / 3 AS AVG"
 				+ ", RANK() OVER(ORDER BY (KOR + ENG + MAT) DESC) AS RANK"
-				+ " FROM TBL_SCORE) WHERE SID = %d", sid);
+				+ " FROM TBL_SCORE)"
+				+ " WHERE SID = %d", sid);
 		
 		ResultSet rs = stmt.executeQuery(sql);
 		while (rs.next())
@@ -197,6 +198,7 @@ public class ScoreDAO
 				+ " WHERE SID = %s"
 				, dto.getName(),dto.getKor(),dto.getEng(), dto.getMat()
 				, dto.getSid());
+		
 		result = stmt.executeUpdate(sql);
 		stmt.close();
 		
