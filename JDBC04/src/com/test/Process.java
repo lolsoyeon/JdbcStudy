@@ -247,7 +247,7 @@ public class Process
 			} 
 			else
 			{
-				// 삭제할 테이처를 찾지 못했다~!!!
+				// 삭제할 테이터를 찾지 못했다~!!!
 				System.out.println("삭제 대상이 존재하지 않습니다.");
 
 			}

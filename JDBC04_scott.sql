@@ -75,6 +75,9 @@ VALUES(SCORESEQ.NEXTVAL,'È«±æµ¿', 90, 80, 70);
 INSERT INTO TBL_SCORE(SID, NAME, KOR, ENG, MAT) VALUES(SCORESEQ.NEXTVAL,'È«±æµ¿', 90, 80, 70)
 ;
 --==>> 1 Çà ÀÌ(°¡) »ðÀÔµÇ¾ú½À´Ï´Ù.
+SELECT *
+FROM TBL_SCORE;
+
 
 COMMIT;
 --==>> Ä¿¹Ô ¿Ï·á.

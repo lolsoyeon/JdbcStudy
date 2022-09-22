@@ -149,7 +149,7 @@ public class MemberMain
 					break;
 				case 4:
 					// 직원 정보 수정
-					prc.JiwonUpdate();
+					prc.jikwonUpdate();
 					break;
 				case 5:
 					// 직원 정보 삭제
@@ -165,6 +165,6 @@ public class MemberMain
 
 		} while (true);
 
-	}//end main
+	}//end main()
 
 }

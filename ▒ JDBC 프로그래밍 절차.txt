@@ -33,6 +33,7 @@ JDBC프로그래밍 절차
 6. 사용을 마친 리소스 반납
     rs.close();		→ ResultSet 을 사용했을 경우
     stmt.close(); 	→ Statement 을 사용했을 경우
+
     dbConn.close();
     (null 체크하여 close() 해 주는 것을 권장.
      finally 블럭에서 구현하는 것을 권장.)
