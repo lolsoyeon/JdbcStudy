@@ -5,6 +5,7 @@
 package com.test;
 
 import java.sql.Connection;
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -182,7 +183,7 @@ public class ScoreDAO
 				+ ", RANK() OVER(ORDER BY (KOR + ENG + MAT) DESC) AS RANK FROM TBL_SCORE)"
 				+ " WHERE SID = ?";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
-		
+		           
 		pstmt.setInt(1, sid);
 
 		
