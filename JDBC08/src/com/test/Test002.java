@@ -34,7 +34,7 @@ public class Test002
 				// check~!!!
 				// 프로시저 내부에서 SYS_REFCUSOR 를 사용하고 있기 때문에
 				// OracleType.COURSOR 를 사용하기 위한 등록 과정이 필요한 상황
-				// -- 인텔리샌ㄴ스가 없다
+				// -- 인텔리센스가 없다
 				// 1. 프로젝트명 마우스 우클릭 > Build path > configure.... >
 				// → 대화창 호출
 				// 2. Libraries 탭 클릭 > ADD External JAR 버튼 클릭
